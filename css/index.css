@@ -1,0 +1,329 @@
+@import "./colors.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;900&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "./hompage.css";
+@import "./slider.css";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Kufi Arabic", sans-serif;
+
+}
+/*Start Global Classes */
+section .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .section-title > div {
+  width: 25%;
+  height: 2px;
+  background-color: #707070 ;
+}
+
+section .section-title h2 {
+  font-size: 2rem;
+  color: var(--headingSectionsColor);
+  margin-left: 20px;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+ .section-desc p {
+  text-align: center;
+  color: var(--textColor);
+  line-height: 1.7;
+}
+
+/* End Global Classes */
+
+/* Start Top Nav img */
+.top-nav-img {
+  height: 111px;
+
+  background-image: url("../assets/SVG/Nav.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+/* End Top Nav img */
+
+/* Start Navbar */
+
+.nav-item .nav-link {
+  font-size: 20px;
+
+  transition: var(--mainTransitionTim);
+  -webkit-transition: var(--mainTransitionTim);
+  -moz-transition: var(--mainTransitionTim);
+  -ms-transition: var(--mainTransitionTim);
+  -o-transition: var(--mainTransitionTim);
+  position: relative;
+}
+@media(max-width:991px) {
+  .nav-item .nav-link {
+    width: max-content;
+  }
+}
+@media (min-width: 1199px) {
+  .nav-item .nav-link {
+    margin-right: 20px;
+  }
+}
+.navbar-brand:hover,
+.nav-item .nav-link:hover {
+  color: var(--hover);
+}
+.nav-item .nav-link.active {
+  border-bottom: 2px solid var(--hover);
+  color: var(--hover);
+}
+
+.nav-item .nav-link img {
+  position: absolute;
+  bottom: 18px;
+  left: -7px;
+}
+.nav-item .nav-link img.lang-icon {
+  left: -15px;
+  bottom: 14px;
+}
+@media(max-width:991px) {
+  .navbar-nav {
+    margin-top: 20px;
+    padding-right: 0;
+  }
+  .nav-item .nav-link img {
+    left: -20px;
+  }
+  .nav-item .nav-link img.lang-icon {
+    left: -25px;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+}
+.navbar-toggler {
+  border: none;
+}
+/* End Navbar */
+
+/* Start Contact Fixed Box */
+.contact-box {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  left: 0px;
+  width: 70px;
+  top: 50%;
+  /*UIProperties*/background: transparent linear-gradient(180deg, #273a95 0%, #4dc7ed 100%) 0%    0% no-repeat padding-box;
+  border-radius: 44px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 1000;
+}
+/* End Contact Fixed Box */
+
+/* start Footer */
+footer,
+footer ul li a {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var( --text-muted-707070);
+  text-decoration:  none;
+}
+footer ul li a {
+  transition: var(--mainTransitionTim);
+  -webkit-transition: var(--mainTransitionTim);
+  -moz-transition: var(--mainTransitionTim);
+  -ms-transition: var(--mainTransitionTim);
+  -o-transition: var(--mainTransitionTim);
+}
+footer ul li a:hover {
+  color: var(--hover);
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-box .logo {
+  margin-bottom: 20px;
+}
+
+.footer-box {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.footer-box .footer-title {
+  padding-bottom: 15px;
+ 
+  color: var(--textColor);
+  border-bottom: 2px solid var(--text-muted-707070);
+}
+.footer-box ul {
+  margin-top: 25px;
+}
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+.footer-box ul li i {
+  margin-right: 5px;
+}
+
+.footer-box ul.text-left {
+  text-align: left;
+}
+footer .social ul {
+  display: flex;
+  align-items: center;
+}
+
+footer .social ul li {
+  margin: 10px;
+}
+
+footer .social ul li a i{
+  font-size: 30px;
+  color: var(--hover);
+}
+
+footer .social ul li a i:hover {
+  color: var(--mainColor);
+}
+.subscrip-input,
+.subscrip-btn {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 6px !important;
+  -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  -ms-border-radius: 6px !important;
+  -o-border-radius: 6px !important;
+}
+.subscrip-input {
+  border: 1px solid var(--text-muted-707070);
+}
+.subscrip-input:focus{
+  outline: none;
+  box-shadow: none;
+  border-color: var(--text-muted-707070);
+}
+.subscrip-btn {
+  background-color: #0071BC;
+  color: var(--textLight);
+  margin-right: 8px;
+  transition: var(--mainTransitionTim);
+  -webkit-transition: var(--mainTransitionTim);
+  -moz-transition: var(--mainTransitionTim);
+  -ms-transition: var(--mainTransitionTim);
+  -o-transition: var(--mainTransitionTim);
+}
+.subscrip-btn:hover {
+  background-color: var(--hover);
+  color: var(--textLight);
+}
+.subscrip-btn img {
+  width: 25px;
+}
+.footer-bottom {
+  height: 213px;
+    background-image: url("../assets/Footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+   
+}
+
+.footer-bottom .container {
+  height: 100%;
+}
+.footer-bottom .footer-copy {
+  color: var(--textLight);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+.footer-bottom .footer-copy p {
+  margin: 17px 0 0 10px;
+
+}
+/* End Footer */
+
+/*Start  Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mainColor);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover);
+}
+/*End Scrollbar */
+
+/* Start Scroll To Top */
+.scrollTotop {
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 100px ;
+  height: 50px;
+  cursor: pointer;
+  background-color: var(--mainColor);
+  color: var(--textLight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: var(--mainTransitionTim);
+  -webkit-transition: var(--mainTransitionTim);
+  -moz-transition: var(--mainTransitionTim);
+  -ms-transition: var(--mainTransitionTim);
+  -o-transition: var(--mainTransitionTim);
+  transform: translateX(200px);
+  -webkit-transform: translateX(200px);
+  -moz-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  -o-transform: translateX(200px);
+}
+
+.scrollTotop:hover{
+  background-color: var(--hover);
+}
+
+.scrollTotop.active {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+/* End Scroll To Top */
+

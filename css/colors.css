@@ -1,0 +1,14 @@
+:root {
+  --mainColor: #263A96;
+  --headingSectionsColor: #0071bc;
+  --hover: #03C3FF;
+  --textColor: #2e2e2e;
+  --bgMainHead: #29ABE2;
+  --textLight: #fff;
+  --textSecundColor: #3C414B;
+  --text-muted-707070: #707070;
+
+
+  --mainTransitionTim: all .3s ease-in-out;
+    
+}
