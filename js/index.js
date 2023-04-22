@@ -1,16 +1,37 @@
+/** @format */
+
+// Scroll Top Btn
 let scrollTopBtn = document.querySelector(".scrollTotop");
 
-window.addEventListener("scroll",() => {
-  
-  let scrolValue = window.scrollY;
+// Hide Footer Logo When Scroll End
+const footerLogo = document.querySelector(".footer-box .logo");
 
-  if (scrolValue > 100) {
-    scrollTopBtn.classList.add("active")
+window.addEventListener("scroll", () => {
+  let scrollValue = window.scrollY;
+
+  // Scroll Top Btn
+  if (scrollValue > 100) {
+    scrollTopBtn.classList.add("active");
   } else {
-    scrollTopBtn.classList.remove("active")
+    scrollTopBtn.classList.remove("active");
   }
-})
+
+  // Hide Footer Logo When Scroll End
+  if (
+    document.documentElement.scrollTop + window.innerHeight + 400 >=
+    document.documentElement.scrollHeight
+  ) {
+   footerLogo.classList.add("hide");
+  } else {
+       footerLogo.classList.remove("hide");
+  }
+});
 
 scrollTopBtn.addEventListener("click", () => {
-  window.scrollTo(0,0)
-})
+  window.scrollTo(0, 0);
+});
+
+
+
+
+

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="247" viewBox="0 0 132 247">
+  <g id="Arrow" transform="translate(-43 -40)">
+    <path id="Path_7096" data-name="Path 7096" d="M167.9,47.93,54.846,156.306s-12.534,11.313,0,24.174,106.513,95.861,106.513,95.861" fill="none" stroke="#fff" stroke-width="2"/>
+    <g id="Ellipse_63" data-name="Ellipse 63" transform="translate(160 40)" fill="#29abe2" stroke="#fff" stroke-width="2">
+      <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+      <circle cx="7.5" cy="7.5" r="6.5" fill="none"/>
+    </g>
+    <g id="Ellipse_67" data-name="Ellipse 67" transform="translate(158 272)" fill="#29abe2" stroke="#fff" stroke-width="2">
+      <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+      <circle cx="7.5" cy="7.5" r="6.5" fill="none"/>
+    </g>
+    <g id="Ellipse_64" data-name="Ellipse 64" transform="translate(103 95)" fill="#29abe2" stroke="#fff" stroke-width="2">
+      <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+      <circle cx="7.5" cy="7.5" r="6.5" fill="none"/>
+    </g>
+    <g id="Ellipse_66" data-name="Ellipse 66" transform="translate(101 221)" fill="#29abe2" stroke="#fff" stroke-width="2">
+      <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+      <circle cx="7.5" cy="7.5" r="6.5" fill="none"/>
+    </g>
+    <g id="Ellipse_65" data-name="Ellipse 65" transform="translate(43 160)" fill="#29abe2" stroke="#fff" stroke-width="2">
+      <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+      <circle cx="7.5" cy="7.5" r="6.5" fill="none"/>
+    </g>
+  </g>
+</svg>
