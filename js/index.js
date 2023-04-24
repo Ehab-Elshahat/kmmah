@@ -25,11 +25,31 @@ window.addEventListener("scroll", () => {
   } else {
        footerLogo.classList.remove("hide");
   }
+
+
 });
 
 scrollTopBtn.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
+
+
+const media = window.matchMedia("(max-width: 991px)");
+
+  if (media.matches) {
+    window.addEventListener("scroll" , () => {
+         if (
+           document.documentElement.scrollTop + window.innerHeight + 900 >=
+           document.documentElement.scrollHeight
+         ) {
+           footerLogo.classList.add("hide");
+         } else {
+           footerLogo.classList.remove("hide");
+         }
+    })
+  } 
+
+
 
 
 
