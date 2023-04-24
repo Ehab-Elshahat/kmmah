@@ -15,6 +15,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 /* Start Top Nav img */
 .top-nav-img {
   height: 111px;
@@ -433,7 +435,7 @@ footer ul {
   font-weight: bold;
 
   color: var(--unnamed-color-2e2e2e);
-  border-bottom: 1px solid #70707063;
+  border-bottom: 2px solid #70707030;
 }
 @media(max-width:991px) {
   .footer-box .footer-title {
@@ -531,6 +533,7 @@ footer .social ul li a i:hover {
   position: absolute;
   bottom: 10px;
   left: 0;
+  padding: 0 10px;
 }
 .footer-bottom .footer-copy p {
   margin: 17px 0 0 10px;
