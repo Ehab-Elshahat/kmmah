@@ -15,8 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 /* Start Top Nav img */
 .top-nav-img {
   height: 111px;
@@ -25,15 +23,18 @@ body {
   background-size: cover;
   background-position: center;
   position: fixed;
-  top: 0;
+  top: -10px;
   left: 0;
 }
 
 /* End Top Nav img */
 
 /* Start Navbar */
+.navbar.shadow-bottom {
+  box-shadow: 0 7px 10px rgb(34 130 138 / 20%);
+}
 .navbar-expand-lg {
-  margin-top: 86px;
+  margin-top: 72px;
   background-color: #fff;
 }
 @media (max-width: 500px) {
@@ -92,11 +93,11 @@ body {
   }
 }
 .navbar-brand img {
-  width: 75px;
+  width: 100px;
 }
 .nav-item .nav-link {
   padding: 8px 15px;
-  font-size: 16px;
+  font-size: 20px;
 
   transition: var(--mainTransitionTim);
   -webkit-transition: var(--mainTransitionTim);
@@ -104,6 +105,7 @@ body {
   -ms-transition: var(--mainTransitionTim);
   -o-transition: var(--mainTransitionTim);
   position: relative;
+  white-space: nowrap;
 }
 @media (max-width: 991px) {
   .nav-item .nav-link {
@@ -176,13 +178,14 @@ body {
   text-align: right;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu .drop-info h3 {
-  font-size: 16px;
+  margin-right: 20px;
+  font-size: 20px;
   color: var(--unnamed-color-273587);
   font-weight: bold;
   line-height: 1.7;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu ul {
-  min-width: 40%;
+
   padding-right: 20px;
   text-align: right;
 }
@@ -268,8 +271,8 @@ body {
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     top: 43px;
-    left: -161%;
-    width: 700px;
+    left: -480px;
+    width: 920px;
     transition: var(--mainTransitionTim);
     -webkit-transition: var(--mainTransitionTim);
     -moz-transition: var(--mainTransitionTim);
@@ -304,6 +307,19 @@ body {
 }
 .contact-box div a img {
   width: 60px;
+  transition: var(--mainTransitionTim);
+  -webkit-transition: var(--mainTransitionTim);
+  -moz-transition: var(--mainTransitionTim);
+  -ms-transition: var(--mainTransitionTim);
+  -o-transition: var(--mainTransitionTim);
+}
+
+.contact-box div a img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 @media (max-width: 991px) {
@@ -337,6 +353,7 @@ footer .container-fluid {
 }
 footer .d-grid {
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
   grid-template-areas:
     "logo-box our-serv-box links-box footer-contact-box"
     "social-box . subscrip-box subscrip-box";
@@ -375,8 +392,6 @@ footer .d-grid {
 .subscrip-box {
   grid-area: subscrip-box;
 }
-
-
 
 footer,
 footer ul li a {
@@ -437,7 +452,7 @@ footer ul {
   color: var(--unnamed-color-2e2e2e);
   border-bottom: 2px solid #70707030;
 }
-@media(max-width:991px) {
+@media (max-width: 991px) {
   .footer-box .footer-title {
     width: 200px;
   }

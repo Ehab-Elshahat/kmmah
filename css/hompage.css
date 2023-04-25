@@ -69,11 +69,11 @@ header .header-text .mobile h3 {
 }
 header .header-text p {
   font-weight: 500;
-  max-width: 660px;
+  max-width: 590px;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   margin-top: 20px;
-  line-height: 1.7;
+  line-height: 2;
   color: var(--textSecundColor);
 }
 @media(max-width:600px) {
