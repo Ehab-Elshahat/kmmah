@@ -28,6 +28,7 @@ body {
   z-index: 899 !important;
 }
 
+
 /* End Top Nav img */
 
 /* Start Navbar */
@@ -38,6 +39,14 @@ body {
   margin-top: 42px;
   background-color: #fff;
   z-index: 901 !important;
+}
+.navbar-expand-lg.move-top {
+  margin-top: 0;
+  transition: var(--mainTransitionTim);
+  -webkit-transition: var(--mainTransitionTim);
+  -moz-transition: var(--mainTransitionTim);
+  -ms-transition: var(--mainTransitionTim);
+  -o-transition: var(--mainTransitionTim);
 }
 
 .navbar-expand-lg .container-fluid {

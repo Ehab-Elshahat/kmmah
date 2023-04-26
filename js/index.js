@@ -62,9 +62,9 @@ const media = window.matchMedia("(max-width: 991px)");
 function addClassShadowToNavBar() {
   let scrollValue = window.scrollY;
    if (scrollValue > 0) {
-     navBar.classList.add("shadow-bottom")
+     navBar.classList.add("shadow-bottom", "move-top");
     } else {
-     navBar.classList.remove("shadow-bottom");
+     navBar.classList.remove("shadow-bottom", "move-top");
      
    }
 }
