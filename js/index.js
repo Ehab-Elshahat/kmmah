@@ -68,6 +68,15 @@ function addClassShadowToNavBar() {
      
    }
 }
+addClassShadowToNavBar();
+
+// Hide Collapsed menu After Clicking OutSide It
+let navbarCollapse = document.querySelector(".navbar-collapse");
+document.addEventListener("keydown" ,(e)=> {
+ if(e.key === "Escape"){
+  navbarCollapse.classList.remove("show")
+ }
+})
 
 
 
