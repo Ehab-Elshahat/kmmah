@@ -78,6 +78,13 @@ document.addEventListener("keydown" ,(e)=> {
  }
 })
 
+// Close Navbar in Small Screen
+let closeNav = document.querySelector(".close-nav");
+
+closeNav.addEventListener("click", () => {
+  navbarCollapse.classList.remove("show");
+})
+
 
 
 
