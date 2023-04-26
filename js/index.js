@@ -7,6 +7,7 @@ let scrollTopBtn = document.querySelector(".scrollTotop");
 const footerLogo = document.querySelector(".footer-box .logo");
 
 window.addEventListener("scroll", () => {
+  handelPosition();
   let scrollValue = window.scrollY;
 
   // Scroll Top Btn
@@ -78,15 +79,36 @@ document.addEventListener("keydown" ,(e)=> {
  }
 })
 
+
+let htmlElement = document.documentElement;
+
+let navToggler = document.querySelector(".navbar-toggler");
+
+navToggler.addEventListener("click", ()=> {
+  htmlElement.classList.toggle("remove-scrollY");
+  handelPosition();
+})
+
+
 // Close Navbar in Small Screen
 let closeNav = document.querySelector(".close-nav");
 
 closeNav.addEventListener("click", () => {
   navbarCollapse.classList.remove("show");
+  htmlElement.classList.remove("remove-scrollY");
+   
 })
 
 
-
+// Handel nav menu position in small screen
+function handelPosition() {
+  if(window.scrollY > 100) {
+   navbarCollapse.classList.remove("move-top");
+  } else {
+    
+    navbarCollapse.classList.add("move-top");
+  }
+}
 
 
 
