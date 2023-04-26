@@ -95,6 +95,11 @@ body {
 .navbar-brand img {
   width: 100px;
 }
+@media(max-width: 991px) {
+  .navbar-brand img {
+  width: 80px !important;
+}
+}
 .nav-item .nav-link {
   padding: 8px 15px;
   font-size: 20px;
