@@ -17,46 +17,20 @@ window.addEventListener("scroll", () => {
     scrollTopBtn.classList.remove("active");
   }
 
-  // Hide Footer Logo When Scroll End
- hideLogo();
+  
 
  addClassShadowToNavBar()
 
 });
 
-function hideLogo() {
-  if (
-    document.documentElement.scrollTop + window.innerHeight + 10 >=
-    document.documentElement.scrollHeight
-  ) {
-    footerLogo.classList.add("hide");
-  } else {
-    footerLogo.classList.remove("hide");
-  }
-}
-
-hideLogo();
+;
 
 // Go to Top
 scrollTopBtn.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-// Hide logo in Small Screen
-const media = window.matchMedia("(max-width: 991px)");
-
-  if (media.matches) {
-    window.addEventListener("scroll" , () => {
-         if (
-           document.documentElement.scrollTop + window.innerHeight + 950 >=
-           document.documentElement.scrollHeight
-         ) {
-           footerLogo.classList.add("hide");
-         } else {
-           footerLogo.classList.remove("hide");
-         }
-    })
-  } 
+ 
 
   // Add Class To NavBar When Scroll
   let navBar = document.querySelector(".navbar");
@@ -74,11 +48,16 @@ addClassShadowToNavBar();
 // Hide Collapsed menu After Clicking OutSide It
 let navbarCollapse = document.querySelector(".navbar-collapse");
 document.addEventListener("keydown" ,(e)=> {
+ 
  if(e.key === "Escape"){
   navbarCollapse.classList.remove("show")
  }
 })
 
+function goToLink(e) {
+  window.open(e, "_self");
+  
+}
 
 let htmlElement = document.documentElement;
 
@@ -110,5 +89,9 @@ function handelPosition() {
   }
 }
 
+let dropLink = document.querySelector(".drop-link");
+dropLink.addEventListener("click", () => {
+  document.querySelector(".dropdown-menu").classList.remove("show")
+})
 
 

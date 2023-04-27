@@ -2,7 +2,6 @@
 
 @import "./colors.css";
 
-
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;900&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @import "./hompage.css";
@@ -31,27 +30,31 @@ body {
   left: 0;
   z-index: 899 !important;
 }
-.top-nav-img .container-fluid {
-  padding: 0 200px;
-}
+
 .top-nav-img .lang-icon {
   font-weight: 500;
-    display: block;
-    width: max-content;
-    margin-right: auto;
-    margin-top: 5px;
-    text-decoration: none;
-    color: var( --headingSectionsColor);
-    background-color: rgb(132 210 241 /.5);
-    padding: 3px 15px;
-    border-radius: 15px ;
-    -webkit-border-radius: 15px ;
-    -moz-border-radius: 15px ;
-    -ms-border-radius: 15px ;
-    -o-border-radius: 15px ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: block;
+  width: max-content;
+  margin-right: auto;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #0071bc;
+  background-color: rgba(225, 225, 225, 30%);
+  padding: 3px 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .top-nav-img .lang-icon {
+    display: none;
+  }
 }
 
 .top-nav-img .lang-icon svg {
@@ -81,63 +84,32 @@ body {
   -o-transition: var(--mainTransitionTim);
 }
 
-.navbar-expand-lg .container-fluid {
-  padding-right: 200px;
-  padding-left: 200px;
-}
-@media (max-width: 1270px) {
-  .navbar-expand-lg .container-fluid,
-  .top-nav-img .container-fluid {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-}
 
-@media (max-width: 991px) {
-  .navbar-expand-lg .container-fluid,
-  .top-nav-img .container-fluid {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .navbar-expand-lg .container-fluid,
-  .top-nav-img .container-fluid {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
 
-@media (max-width: 1200px) {
-  .navbar-brand {
-    position: relative;
-    top: -15px;
-  }
-}
+
+
+
+
+
 
 @media (max-width: 991px) {
   .navbar-brand {
     margin-right: 0;
-    top: 0;
+   
   }
 }
 
-@media (max-width: 767px) {
-  .navbar-toggler {
-    right: 8px;
-  }
-}
 .navbar-brand img {
-  width: 100px;
+  width: 90px;
 }
-@media(max-width: 991px) {
+@media (max-width: 991px) {
   .navbar-brand img {
-  width: 80px !important;
-}
+    width: 80px !important;
+  }
 }
 .nav-item .nav-link {
   padding: 8px 15px;
-  font-size: 20px;
+  font-size: 17px;
 
   transition: var(--mainTransitionTim);
   -webkit-transition: var(--mainTransitionTim);
@@ -189,9 +161,9 @@ body {
   .nav-item .nav-link.active svg path {
     fill: #000;
   }
-   .nav-item .nav-link:hover {
+  .nav-item .nav-link:hover {
     color: var(--hover-03c3ff);
-   }
+  }
 }
 
 .nav-item .nav-link img {
@@ -208,6 +180,7 @@ body {
   .navbar-nav {
     margin-top: 20px;
     padding-right: 0;
+    direction: rtl;
   }
   .nav-item {
     display: inline;
@@ -234,6 +207,8 @@ body {
 .navbar-toggler {
   border: none;
 }
+
+
 
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-container {
   padding: 10px 20px;
@@ -265,6 +240,11 @@ body {
   font-weight: bold;
   line-height: 1.7;
 }
+@media (max-width: 500px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu .drop-info h3 {
+    margin-right: 0;
+  }
+}
 .navbar-expand-lg .navbar-nav .dropdown-menu ul {
   width: 40%;
   padding-right: 20px;
@@ -277,8 +257,10 @@ body {
     padding-right: 0;
   }
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu ul li {
-  cursor: pointer;
+.navbar-expand-lg .navbar-nav .dropdown-menu ul li .go-to-page {
+  display: block;
+  text-decoration: none;
+  color: #2e2e2e;
   font-size: 16px;
   padding: 10px 20px;
   transition: var(--mainTransitionTim);
@@ -287,14 +269,17 @@ body {
   -ms-transition: var(--mainTransitionTim);
   -o-transition: var(--mainTransitionTim);
 }
-@media(max-width: 500px) {
-  .navbar-expand-lg .navbar-nav .dropdown-menu ul li{
+.navbar-expand-lg .navbar-nav .dropdown-menu ul li.ask-us-dropdown {
+  padding: 10px 20px;
+}
+@media (max-width: 500px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu ul li a.go-to-page {
     padding: 10px 10px;
     font-size: 14px;
   }
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu ul li:hover {
-  background: #EEEDFF
+  background: #eeedff;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu ul li.ask-us-dropdown:hover {
   background: transparent;
@@ -364,6 +349,13 @@ body {
 @media (max-width: 991px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: unset;
+    border: none;
+    border-top: 1px solid #65c7ee;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
   }
 }
 .navbar-expand-lg .navbar-nav .nav-item:hover svg.down {
@@ -401,12 +393,14 @@ body {
 @media (max-width: 991px) {
   .navbar-collapse.show {
     right: 0;
-    min-height: 100vh;
-    transition: all .1s ease;
-    -webkit-transition: all .1s ease;
-    -moz-transition: all .1s ease;
-    -ms-transition: all .1s ease;
-    -o-transition: all .1s ease;
+    height: 100vh;
+    overflow-y: scroll;
+    direction: ltr;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
     box-shadow: 0px 3px 25px #00000029;
     border: 1px solid #65c7ee;
     border-radius: 8px;
@@ -415,11 +409,12 @@ body {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     box-shadow: -220px -1px 0px rgb(0 0 0 / 0.5);
-}
+  }
   .navbar-collapse.show .close-nav {
     display: block;
-    position: absolute;
-    left: -20px;
+    position: fixed;
+    left: 18vw;
+    z-index: 3;
     top: 40px;
     width: 35px;
     height: 35px;
@@ -430,26 +425,31 @@ body {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 0 5px rgb(0 0 0 / 0.6);
-    transition:var(--mainTransitionTim) ;
-    -webkit-transition:var(--mainTransitionTim) ;
-    -moz-transition:var(--mainTransitionTim) ;
-    -ms-transition:var(--mainTransitionTim) ;
-    -o-transition:var(--mainTransitionTim) ;
-}
+    transition: var(--mainTransitionTim);
+    -webkit-transition: var(--mainTransitionTim);
+    -moz-transition: var(--mainTransitionTim);
+    -ms-transition: var(--mainTransitionTim);
+    -o-transition: var(--mainTransitionTim);
+  }
+  @media (max-width: 550px) {
+    .navbar-collapse.show .close-nav {
+      left: 17vw;
+    }
+  }
   .navbar-collapse.show .close-nav:hover {
     background-color: var(--hover-03c3ff);
   }
-   .navbar-collapse.show .close-nav svg path {
-    fill: var(--headingSectionsColor)
-   }
-   .navbar-collapse.show .close-nav:hover svg path {
+  .navbar-collapse.show .close-nav svg path {
+    fill: var(--headingSectionsColor);
+  }
+  .navbar-collapse.show .close-nav:hover svg path {
     fill: #fff;
-   }
+  }
   .navbar-collapse {
     display: block !important;
     padding: 20px;
     position: absolute;
-    min-height: 100vh;
+
     left: 100%;
     z-index: 1045;
     width: 80vw;
@@ -467,9 +467,10 @@ body {
   }
 }
 
-@media (max-height: 900px) {
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    height: 400px;
+@media (max-height: 1000px) {
+  .navbar-collapse.show {
+    direction: ltr;
+    height: 100vh;
     overflow-y: scroll;
   }
 }
@@ -531,25 +532,16 @@ body {
 footer {
   background-color: var(--unnamed-color-d9f2f2);
 }
-footer .container-fluid {
-  padding: 0 200px;
-}
-@media (max-width: 1270px) {
-  footer .container-fluid {
-    padding: 0 100px;
-  }
-}
-@media (max-width: 767px) {
-  footer .container-fluid {
-    padding: 0 10px;
-  }
-}
+
+
+
 footer .d-grid {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   grid-template-areas:
     "logo-box our-serv-box links-box footer-contact-box"
     "social-box . subscrip-box subscrip-box";
+    gap: 10px 40px;
 }
 @media (max-width: 991px) {
   footer .d-grid {
@@ -627,15 +619,8 @@ footer ul {
   line-height: 2;
 }
 
-.footer-box {
-  padding: 10px;
-}
 
-@media (min-width: 1250px) {
-  .footer-box {
-    margin: 0 20px;
-  }
-}
+
 
 .footer-box .footer-title {
   font-size: 16px;
