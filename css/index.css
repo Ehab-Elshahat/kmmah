@@ -470,7 +470,7 @@ body {
 @media (max-height: 1000px) {
   .navbar-collapse.show {
     direction: ltr;
-    height: 100vh;
+    height: 103vh;
     overflow-y: scroll;
   }
 }
