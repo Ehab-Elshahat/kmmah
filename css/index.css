@@ -2,6 +2,7 @@
 
 @import "./colors.css";
 
+
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;900&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @import "./hompage.css";
@@ -30,7 +31,35 @@ body {
   left: 0;
   z-index: 899 !important;
 }
+.top-nav-img .container-fluid {
+  padding: 0 200px;
+}
+.top-nav-img .lang-icon {
+  font-weight: 500;
+    display: block;
+    width: max-content;
+    margin-right: auto;
+    margin-top: 5px;
+    text-decoration: none;
+    color: var( --headingSectionsColor);
+    background-color: rgb(132 210 241 /.5);
+    padding: 3px 15px;
+    border-radius: 15px ;
+    -webkit-border-radius: 15px ;
+    -moz-border-radius: 15px ;
+    -ms-border-radius: 15px ;
+    -o-border-radius: 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.top-nav-img .lang-icon svg {
+  margin-right: 5px;
+}
+.top-nav-img .lang-icon svg path {
+  fill: var(--headingSectionsColor);
+}
 
 /* End Top Nav img */
 
@@ -57,20 +86,23 @@ body {
   padding-left: 200px;
 }
 @media (max-width: 1270px) {
-  .navbar-expand-lg .container-fluid {
+  .navbar-expand-lg .container-fluid,
+  .top-nav-img .container-fluid {
     padding-right: 100px;
     padding-left: 100px;
   }
 }
 
 @media (max-width: 991px) {
-  .navbar-expand-lg .container-fluid {
+  .navbar-expand-lg .container-fluid,
+  .top-nav-img .container-fluid {
     padding-right: 50px;
     padding-left: 50px;
   }
 }
 @media (max-width: 767px) {
-  .navbar-expand-lg .container-fluid {
+  .navbar-expand-lg .container-fluid,
+  .top-nav-img .container-fluid {
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -146,12 +178,20 @@ body {
   border-bottom: 2px solid var(--hover-03c3ff);
   color: var(--hover-03c3ff);
 }
-
+.nav-item .nav-link.active svg path {
+  fill: var(--hover-03c3ff);
+}
 @media (max-width: 991px) {
   .nav-item .nav-link.active {
     border: none;
     color: #000;
   }
+  .nav-item .nav-link.active svg path {
+    fill: #000;
+  }
+   .nav-item .nav-link:hover {
+    color: var(--hover-03c3ff);
+   }
 }
 
 .nav-item .nav-link img {
@@ -742,7 +782,7 @@ footer .social ul li a i:hover {
   z-index: 900;
   bottom: 50px;
   right: 30px;
-  padding: 15px 30px;
+  padding: 10px 20px;
   cursor: pointer;
   background-color: var(--unnamed-color-273587);
   color: var(--textLight);
