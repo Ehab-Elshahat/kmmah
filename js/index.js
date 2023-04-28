@@ -89,9 +89,5 @@ function handelPosition() {
   }
 }
 
-// let dropLink = document.querySelector(".drop-link");
-// dropLink.addEventListener("click", () => {
-//   document.querySelector(".dropdown-menu").classList.remove("show")
-// })
 
 

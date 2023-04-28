@@ -365,9 +365,9 @@ body {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
-.navbar-expand-lg .navbar-nav .dropdown:hover .dropdown-menu {
+/* .navbar-expand-lg .navbar-nav .dropdown:hover .dropdown-menu {
   display: block;
-}
+} */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     left: -425px;
@@ -414,7 +414,7 @@ body {
     display: block;
     position: fixed;
     left: 18vw;
-    z-index: 3;
+    z-index: 1000;
     top: 40px;
     width: 35px;
     height: 35px;
