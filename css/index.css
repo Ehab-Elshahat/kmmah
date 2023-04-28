@@ -198,7 +198,7 @@ body {
 @media (max-width: 500px) {
   .navbar-nav {
     margin-top: 0;
-    height: 100%;
+    
   }
   .nav-item .nav-link {
     margin-bottom: 10px;
@@ -432,7 +432,8 @@ body {
   }
   @media (max-width: 550px) {
     .navbar-collapse.show .close-nav {
-      left: 17vw;
+      left: 21vw;
+      top: 25px;
     }
   }
   .navbar-collapse.show .close-nav:hover {
@@ -446,7 +447,8 @@ body {
   }
   .navbar-collapse {
     display: block !important;
-    padding: 20px;
+        padding: 20px 20px 50px 20px;
+
     position: absolute;
 
     left: 100%;
@@ -466,13 +468,7 @@ body {
   }
 }
 
-@media (max-height: 1000px) {
-  .navbar-collapse.show {
-    direction: ltr;
-    height: 103vh;
-    overflow-y: scroll;
-  }
-}
+
 
 /* End Navbar */
 
