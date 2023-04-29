@@ -54,11 +54,15 @@ document.addEventListener("keydown" ,(e)=> {
  }
 })
 
+// Go To Page On Click a Link
 function goToLink(e) {
   window.open(e, "_self");
-  
 }
 
+
+
+
+// Stop Scrolling When navbar open in small screen
 let htmlElement = document.documentElement;
 
 let navToggler = document.querySelector(".navbar-toggler");

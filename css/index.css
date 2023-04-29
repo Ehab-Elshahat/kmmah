@@ -21,7 +21,7 @@ body {
 /* Start Top Nav img */
 .top-nav-img {
   height: 111px;
-  background: url("../assets/SVG/Nav-ٍSmall.svg") #fff;
+  background: url("../assets/SVG/General/Nav-Footer/Nav-ٍSmall.svg") #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -713,7 +713,7 @@ footer .social ul li a i:hover {
 }
 .footer-bottom {
   height: 110px;
-  background-image: url("../assets/Footer.png");
+  background-image: url("../assets/SVG/General/Nav-Footer/Footer.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
