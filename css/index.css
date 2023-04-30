@@ -29,16 +29,16 @@ body {
   top: 0px;
   left: 0;
   z-index: 899 !important;
+ 
 }
 
-.top-nav-img .lang-icon {
+.footer-contact-box .lang-icon {
   font-weight: 500;
-  display: block;
-  width: max-content;
+  width: 77px;
   margin-right: auto;
-  margin-top: 5px;
+  margin-top: 40px;
   text-decoration: none;
-  color: #0071bc;
+  color: var(--text-muted-707070);;
   background-color: rgba(225, 225, 225, 30%);
   padding: 3px 15px;
   border-radius: 15px;
@@ -48,7 +48,11 @@ body {
   -o-border-radius: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.footer-contact-box .lang-icon svg path {
+  fill: var(--text-muted-707070);
 }
 
 @media (max-width: 991px) {
@@ -74,43 +78,42 @@ body {
   margin-top: 42px;
   background-color: #fff;
   z-index: 901 !important;
+   transition: var(--mainTransitionTim);
+  -webkit-transition: var(--mainTransitionTim);
+  -moz-transition: var(--mainTransitionTim);
+  -ms-transition: var(--mainTransitionTim);
+  -o-transition: var(--mainTransitionTim);
 }
 .navbar-expand-lg.move-top {
   margin-top: 0;
+ 
+}
+
+.navbar-brand {
+    margin-right: 0;
+   
+  }
+
+.navbar-brand img {
+  width: 85px;
   transition: var(--mainTransitionTim);
   -webkit-transition: var(--mainTransitionTim);
   -moz-transition: var(--mainTransitionTim);
   -ms-transition: var(--mainTransitionTim);
   -o-transition: var(--mainTransitionTim);
 }
-
-
-
-
-
-
-
-
-
-@media (max-width: 991px) {
-  .navbar-brand {
-    margin-right: 0;
-   
-  }
-}
-
-.navbar-brand img {
-  width: 90px;
+.navbar-expand-lg.move-top .navbar-brand img{
+  width: 60px;
 }
 @media (max-width: 991px) {
   .navbar-brand img {
-    width: 80px !important;
+    width: 75px !important;
   }
 }
 .nav-item .nav-link {
   padding: 8px 15px;
-  font-size: 17px;
-
+  font-size: 15px;
+  font-weight: bold;
   transition: var(--mainTransitionTim);
   -webkit-transition: var(--mainTransitionTim);
   -moz-transition: var(--mainTransitionTim);
@@ -136,9 +139,7 @@ body {
   .nav-item .nav-link {
     margin-right: 30px;
   }
-  .navbar-nav {
-    margin-top: 35px;
-  }
+  
 }
 
 .nav-item .nav-link:hover,
