@@ -174,7 +174,7 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-container {
-  padding: 10px 20px;
+  padding: 5px 15px ;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -198,7 +198,7 @@ body {
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu .drop-info h3 {
 
-  font-size: 20px;
+  font-size: 17px;
   color: var(--unnamed-color-273587);
   font-weight: bold;
   line-height: 1.7;
@@ -241,7 +241,7 @@ body {
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu ul li .go-to-page h6,
 .navbar-expand-lg .navbar-nav .dropdown-menu ul li.ask-us-dropdown h6 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   color: #6C6C6C;
   margin-bottom: 0;
@@ -375,7 +375,7 @@ body {
 @media (min-width: 1200px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     top: 40px;
-    width: 888px;
+    width: 790px;
     left: -430px;
     
   }
@@ -460,7 +460,7 @@ body {
     -o-transition: var(--mainTransitionTim);
   }
   .navbar-collapse.move-top {
-    top: -42px;
+    top: -43px;
   }
 }
 
@@ -534,10 +534,10 @@ footer .d-grid {
   footer .d-grid {
     grid-template-areas:
       "logo-box logo-box logo-box logo-box "
-      "social-box social-box social-box social-box "
       "our-serv-box our-serv-box our-serv-box our-serv-box "
       "links-box links-box links-box links-box "
       "footer-contact-box footer-contact-box footer-contact-box footer-contact-box"
+      "social-box social-box social-box social-box "
       "subscrip-box subscrip-box subscrip-box subscrip-box";
   }
 }

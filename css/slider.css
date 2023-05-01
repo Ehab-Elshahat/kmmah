@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+.cascade-slider_slides {
+  height: 100%;
+}
+
 .cascade-slider_item {
   background-color: #fff;
   position: absolute;
