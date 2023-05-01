@@ -8,15 +8,16 @@
 @import "./slider.css";
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  direction: rtl;
 }
-html.remove-scrollY {
-  overflow-y: hidden;
-}
+
 body {
   font-family: "Noto Kufi Arabic", sans-serif;
   overflow-x: hidden;
 }
+
+
+
 
 /* Start Top Nav img */
 .top-nav-img {
@@ -40,7 +41,7 @@ body {
 .navbar-expand-lg {
   margin-top: 42px;
   background-color: #fff;
-  z-index: 901 !important;
+  z-index: 900 !important;
   transition: var(--mainTransitionTim);
   -webkit-transition: var(--mainTransitionTim);
   -moz-transition: var(--mainTransitionTim);
@@ -386,6 +387,8 @@ body {
 }
 @media (max-width: 991px) {
   .navbar-collapse.show {
+    position: fixed;
+    top: 0;
     right: 0;
     height: 100vh;
     overflow-y: scroll;
@@ -451,7 +454,7 @@ body {
     z-index: 1045;
     width: 80vw;
     top: 0;
-    z-index: 99999;
+    z-index: 910;
     background-color: var(--textLight);
     transition: var(--mainTransitionTim);
     -webkit-transition: var(--mainTransitionTim);
@@ -459,9 +462,7 @@ body {
     -ms-transition: var(--mainTransitionTim);
     -o-transition: var(--mainTransitionTim);
   }
-  .navbar-collapse.move-top {
-    top: -43px;
-  }
+  
 }
 
 /* End Navbar */
@@ -581,6 +582,20 @@ footer ul li a {
   -moz-transition: var(--mainTransitionTim);
   -ms-transition: var(--mainTransitionTim);
   -o-transition: var(--mainTransitionTim);
+}
+.social.social-box ul li img {
+  transition: var(--mainTransitionTim);
+  -webkit-transition: var(--mainTransitionTim);
+  -moz-transition: var(--mainTransitionTim);
+  -ms-transition: var(--mainTransitionTim);
+  -o-transition: var(--mainTransitionTim);
+}
+.social.social-box ul li img:hover {
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
 }
 footer ul li a:hover {
   color: var(--hover-03c3ff);
@@ -748,7 +763,7 @@ footer .social ul li a i:hover {
 .scrollTotop {
   font-size: 15px;
   position: fixed;
-  z-index: 900;
+  z-index: 899;
   bottom: 50px;
   right: 30px;
   padding: 10px 20px;

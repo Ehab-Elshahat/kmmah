@@ -59,6 +59,7 @@ function goToLink(e) {
 // Stop Scrolling When navbar open in small screen
 let htmlElement = document.documentElement;
 
+
 let navToggler = document.querySelector(".navbar-toggler");
 
 navToggler.addEventListener("click", ()=> {
