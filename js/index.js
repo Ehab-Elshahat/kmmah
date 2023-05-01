@@ -3,9 +3,6 @@
 // Scroll Top Btn
 let scrollTopBtn = document.querySelector(".scrollTotop");
 
-// Hide Footer Logo When Scroll End
-const footerLogo = document.querySelector(".footer-box .logo");
-
 window.addEventListener("scroll", () => {
   handelPosition();
   let scrollValue = window.scrollY;
@@ -16,11 +13,7 @@ window.addEventListener("scroll", () => {
   } else {
     scrollTopBtn.classList.remove("active");
   }
-
-  
-
  addClassShadowToNavBar()
-
 });
 
 ;
@@ -33,13 +26,17 @@ scrollTopBtn.addEventListener("click", () => {
  
 
   // Add Class To NavBar When Scroll
+  let navTopImage = document.querySelector(".top-nav-img");
+  console.log(navTopImage.style.height)
   let navBar = document.querySelector(".navbar");
 function addClassShadowToNavBar() {
   let scrollValue = window.scrollY;
    if (scrollValue > 0) {
      navBar.classList.add("shadow-bottom", "move-top");
+     navTopImage.style.height = 0
     } else {
      navBar.classList.remove("shadow-bottom", "move-top");
+     navTopImage.style.height= "111px"
      
    }
 }
@@ -58,10 +55,6 @@ document.addEventListener("keydown" ,(e)=> {
 function goToLink(e) {
   window.open(e, "_self");
 }
-
-
-
-
 
 // Stop Scrolling When navbar open in small screen
 let htmlElement = document.documentElement;
@@ -93,6 +86,14 @@ function handelPosition() {
     navbarCollapse.classList.add("move-top");
   }
 }
+
+// Stop Click Event On DropDown
+let navItemDropdown = document.querySelector(".nav-item.dropdown "); 
+let dropDownMenu = document.querySelector(".dropdown-menu");
+navItemDropdown.addEventListener("click", (e)=> {
+e.target.parentElement.classList.remove("show")
+dropDownMenu.classList.remove("show")
+})
 
 
 

@@ -30,7 +30,7 @@
     text-align: center;
   }
 }
-.home-page-header .header-text .mobile {
+.home-page-header .header-text .mediume {
   display: none;
 }
 @media(max-width:600px) {
@@ -67,29 +67,48 @@
     display: none;
   }
 }
+.home-page-header .header-text .mediume .page-title-up,
+.home-page-header .header-text .mediume .page-title-down
+ {
+  width: 550px;
+  padding: 20px;
+  text-align: center;
+}
+
+.home-page-header .header-text .mobile .page-title-up,
+.home-page-header .header-text .mobile .page-title-down {
+  text-align: center;
+width: auto;
+  margin: auto;
+}
+
 .home-page-header .header-text p {
-  font-weight: 500;
-  max-width: 590px;
+  font-weight: bold;
+  max-width: 640px;
   text-align: center;
   font-size: 18px;
   margin-top: 20px;
   line-height: 2;
   color: var(--textSecundColor);
 }
+
 @media(max-width:600px) {
  .home-page-header .header-text p {
-  max-width: 300px;
+  max-width: 440px;
   margin: 20px auto ;
-  font-weight: normal;
+  
   line-height: 2;
-  font-size: 14px;
+
  } 
 }
-@media (max-width: 776px) {
-  .home-page-header .header-text p br {
-    display: none;
+
+@media(max-width: 991px) {
+  .home-page-header .header-text p {
+    width: auto;
+    font-size: 14px;
   }
 }
+
 /* End Header */
 
 /* Start Our Services */
@@ -375,16 +394,17 @@ border-right: 5px solid rgb(255, 255, 255, .5);
 .our-work-img.one,
 .our-work-img.tow,
 .our-work-img.three {
-  background-size: cover;
-  background-position: center;
+  background-size: cover ;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
+ 
 }
 .our-work-img.one {
   background-image: url("../assets/SVG/Home-Page//Our-Work-section/rm355-pf-s73-card-laptop-01-mockup\ copy.png");
   
 }
 .our-work-img.tow {
-  background-image: url("../assets/SVG/Home-Page//Our-Work-section/Kids_academy__mockup.width-1920.format-jpeg-Recoveredهته copy.png");
+  background-image: url("../assets/SVG/Home-Page//Our-Work-section/Kids_academy__mockup.width-1920.format-jpeg-Recoveredهته\ copy.png");
   
 }
 .our-work-img.three {
