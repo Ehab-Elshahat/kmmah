@@ -122,7 +122,7 @@
   box-shadow: 0px 3px 5px #d0e0e6;
 }
 .custom-box {
-  height:380px;
+  height: 380px;
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
@@ -145,7 +145,6 @@
   font-weight: bold;
   color: var(--headingSectionsColor);
   text-align: center;
-
 }
 .custom-box .custom-icon {
   width: 90px;
@@ -310,7 +309,11 @@
   margin-right: 10px;
 }
 .main-mobile {
+  background-image: url(../assets/SVG/Web-Design-Page/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center -25px;
   margin-bottom: 50px;
+  background-size: contain;
 }
 .idea-box-mobile {
   padding: 10px;
@@ -318,11 +321,10 @@
 }
 .idea-box-mobile.right {
   direction: ltr;
-  border-left: 2px dotted var(--hover-03c3ff);
+
   margin-left: 20px;
 }
 .idea-box-mobile.idea-box-mobile.left {
-  border-right: 2px dotted var(--hover-03c3ff);
   margin-right: 20px;
 }
 .idea-box-mob-up {
@@ -340,12 +342,7 @@
   font-weight: bold !important;
   color: var(--headingSectionsColor);
 }
-.idea-box-mobile .box-mob-icon {
-  width: 80px;
-}
-.idea-box-mobile .box-mob-icon img {
-  width: 100%;
-}
+
 .idea-box-mobile .idea-box-p {
   font-size: 14px;
   font-weight: bold;
