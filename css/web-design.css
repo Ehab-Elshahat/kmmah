@@ -278,7 +278,7 @@
   position: relative;
   width: 300px;
   height: 60px;
-  margin: auto;
+  margin: 30px auto;
   text-decoration: none;
   background-color: #0071bc;
   display: flex;
@@ -316,41 +316,56 @@
   background-size: contain;
 }
 .idea-box-mobile {
-  padding: 10px;
-  height: 100%;
+  position: relative;
+
+  
 }
 .idea-box-mobile.right {
-  direction: ltr;
-
-  margin-left: 20px;
-}
-.idea-box-mobile.idea-box-mobile.left {
-  margin-right: 20px;
-}
-.idea-box-mob-up {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: end;
+ margin-left: 40px;
 }
-.idea-box-mobile.left .idea-box-p {
-  padding-right: 40px;
+.idea-box-mobile.left {
+  margin-right: 40px;
 }
+.idea-box-mobile.tow {
+
+top:32px;
+}
+.idea-box-mobile.three {
+  top: 55px;
+}
+.idea-box-mobile.four {
+  top: 30px;
+}
+.idea-box-mobile.five {
+  top: 15px;
+}
+.idea-box-mobile.six {
+  top: 20px;
+}
+
+
 .idea-box-mobile.right .idea-box-p {
-  padding-left: 40px;
+  text-align: left;
 }
 .idea-box-mob-up .box-mob-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold !important;
   color: var(--headingSectionsColor);
 }
 
 .idea-box-mobile .idea-box-p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: var(--textSecundColor);
   line-height: 1.7;
 }
 .idea-box-mobile.last {
+  top: 70px;
   text-align: center;
+  
 }
 .idea-box-mobile.last .idea-box-mob-up {
   display: block;
