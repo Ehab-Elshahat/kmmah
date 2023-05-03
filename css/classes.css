@@ -9,6 +9,12 @@
   padding: 15px 20px;
 
 }
+@media(max-width: 500px) {
+  .page-title-up,
+.page-title-down {
+  font-size: 2.5vh;
+}
+}
 .page-title-down {
   border-top: 8px solid rgb(38 58 150 / 58%);
   margin-top: -15px;

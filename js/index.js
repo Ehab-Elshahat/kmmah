@@ -50,12 +50,6 @@ function goToLink(e) {
   window.open(e, "_self");
 }
 
-// let navToggler = document.querySelector(".navbar-toggler");
-
-// navToggler.addEventListener("click", ()=> {
-
-//   // handelPosition();
-// })
 
 // Close Navbar in Small Screen
 let closeNav = document.querySelector(".close-nav");

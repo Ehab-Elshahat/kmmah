@@ -326,8 +326,12 @@
   align-items: end;
  margin-left: 40px;
 }
+.idea-box-mobile.right .box-mob-title {
+  text-align: left;
+  margin-left: 8px;
+}
 .idea-box-mobile.left {
-  margin-right: 40px;
+  margin-right: 45px;
 }
 .idea-box-mobile.tow {
 

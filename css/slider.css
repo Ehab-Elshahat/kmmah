@@ -11,6 +11,7 @@
 }
 
 .cascade-slider_item {
+  cursor: pointer;
   background-color: #fff;
   position: absolute;
   top: 50%;
