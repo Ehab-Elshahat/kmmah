@@ -106,4 +106,39 @@ submitForm.addEventListener("submit", (e) => {
   }
 });
 
+// Marketing page
+// Change Background Our Work Section
+let ourWorkSection = document.querySelector(".our-work");
+let titles = document.querySelectorAll(
+  ".overlay .container .overlay-l ul li h2"
+);
+let bgImages = [
+  "../assets/SVG/marketing-page/vesuvio.png",
+  "../assets/SVG/marketing-page/Trackmat.png",
+  "../assets/SVG/marketing-page/Ta3lam.png",
+  "../assets/SVG/marketing-page/Urmoney.png",
+  "../assets/SVG/marketing-page/Homey.png",
+];
+titles.forEach((title, index)=> {
+  title.addEventListener("click",() => {
+    ourWorkSection.style.backgroundImage = "url("+bgImages[index]+")";
+    ourWorkSection.style.backgroundSize = "cover";
+  })
+})
+
+// Marketing page
+// The Services
+let serTitles = document.querySelectorAll(".ser-r-titles");
+let serBoxes = document.querySelectorAll(".ser-l")
+serTitles.forEach((title, index) => {
+  title.addEventListener("click", ()=> {
+    serTitles.forEach(tit => tit.classList.remove("active"))
+    title.classList.add("active")
+    serBoxes.forEach(box => {
+      box.classList.remove("active")
+    })
+    serBoxes[index].classList.add("active")
+  })
+})
+
 

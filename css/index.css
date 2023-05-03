@@ -8,6 +8,7 @@
 @import "./slider.css";
 html {
   scroll-behavior:  smooth;
+  overflow-x: hidden;
   direction: rtl;
 }
 

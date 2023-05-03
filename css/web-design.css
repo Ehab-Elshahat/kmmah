@@ -45,6 +45,11 @@
   line-height: 2;
   color: #3c414b;
 }
+@media(max-width: 500px) {
+  .web-des-header .header-r p {
+    font-size: 16px;
+  }
+}
 .web-des-header .header-l {
   position: relative;
   left: 50px;
