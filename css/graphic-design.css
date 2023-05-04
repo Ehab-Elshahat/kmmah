@@ -5,20 +5,20 @@
  */
 
 .main-graphic-design {
-  margin-top: 380px;
+  margin-top: 200px;
 }
 @media(max-width:991px) {
- .main-graphic-design {
-  margin-top: 280px;
- } 
-}
-@media(max-width:767px) {
  .main-graphic-design {
   margin-top: 180px;
  } 
 }
+@media(max-width:767px) {
+ .main-graphic-design {
+  margin-top: 150px;
+ } 
+}
 .main-graphic-design .row {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .main-graphic-design .be-client a {

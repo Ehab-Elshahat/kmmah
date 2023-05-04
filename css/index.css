@@ -6,6 +6,7 @@
 
 @import "./hompage.css";
 @import "./slider.css";
+
 html {
   scroll-behavior:  smooth;
   overflow-x: hidden;
@@ -75,7 +76,7 @@ body {
 }
 .nav-item .nav-link {
   padding: 8px 15px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   transition: var(--mainTransitionTim);
   -webkit-transition: var(--mainTransitionTim);
@@ -200,7 +201,7 @@ body {
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu .drop-info h3 {
 
-  font-size: 17px;
+  font-size: 15px;
   color: var(--unnamed-color-273587);
   font-weight: bold;
   line-height: 1.7;
@@ -243,7 +244,7 @@ body {
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu ul li .go-to-page h6,
 .navbar-expand-lg .navbar-nav .dropdown-menu ul li.ask-us-dropdown h6 {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: bold;
   color: #6C6C6C;
   margin-bottom: 0;
@@ -475,13 +476,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  left: 0px;
-  width: 60px;
+  padding: 8px 0;
+  left: 0;
+
   top: 50%;
   /*UIProperties*/
-  background: transparent linear-gradient(180deg, #273a95 0%, #4dc7ed 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #273a95 0%, #4dc7ed 100%) ;
   border-radius: 44px;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -491,7 +491,7 @@ body {
   z-index: 800;
 }
 .contact-box div a img {
-  width: 60px;
+  width: 50px;
   transition: var(--mainTransitionTim);
   -webkit-transition: var(--mainTransitionTim);
   -moz-transition: var(--mainTransitionTim);
@@ -509,7 +509,7 @@ body {
 
 @media (max-width: 991px) {
   .contact-box {
-    padding: 8px;
+  
     right: 0;
     width: 50px;
   }
@@ -525,12 +525,12 @@ footer {
 }
 
 footer .d-grid {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
 
   grid-template-areas:
-    "logo-box our-serv-box links-box footer-contact-box"
+    "logo-box our-serv-box  links-box footer-contact-box"
     "social-box . subscrip-box subscrip-box";
-  gap: 10px 40px;
+  gap: 20px;
 }
 @media (max-width: 991px) {
   footer .d-grid {
@@ -549,17 +549,14 @@ footer .d-grid {
 .our-serv-box {
   grid-area: our-serv-box;
 }
+
 .links-box {
   grid-area: links-box;
 }
 .footer-contact-box {
   grid-area: footer-contact-box;
 }
-@media (max-width: 991px) {
-  .footer-contact-box ul {
-    text-align: right !important;
-  }
-}
+
 .social-box {
   grid-area: social-box;
 }
@@ -567,15 +564,32 @@ footer .d-grid {
   grid-area: subscrip-box;
 }
 
+.our-serv-list {
+  display: flex;
+  column-gap: 50px;
+}
+.our-serv-list ul li a {
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .footer-contact-box ul {
+    text-align: right !important;
+  }
+  .our-serv-list {
+    flex-direction: column;
+  }
+}
+
+
 footer,
 footer ul li a {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.7;
   color: var(--text-muted-707070);
   text-decoration: none;
 }
 footer ul li {
-  font-size: 14px;
+  font-size: 13px;
 }
 footer ul li a {
   transition: var(--mainTransitionTim);
@@ -618,7 +632,7 @@ footer ul {
 }
 
 .footer-box p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 2;
 }
 
@@ -713,44 +727,7 @@ footer .social ul li a i:hover {
   border-color: #03c3ff;
 }
 
-.alert-box {
-  height: 45px;
 
-}
-.alert-box .alert {
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  transition: all ease-in-out;
-  -webkit-transition: all ease-in-out;
-  -moz-transition: all ease-in-out;
-  -ms-transition: all ease-in-out;
-  -o-transition: all ease-in-out;
-  display: none;
-}
-.alert-box .alert h6 {
-  font-weight: normal;
-  font-size: 15px;
-  margin-left: 8px;
-}
-.alert-box .alert.success {
-  background-color: #54e1a5;
- 
-}
-.alert-box .alert.danger {
-  background-color: rgb(236, 102, 102);
-}
-.alert-box .alert.warning {
-  background-color:  rgb(254, 155, 1);
-}
 
 .footer-bottom {
   height: 110px;

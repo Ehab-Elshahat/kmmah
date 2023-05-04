@@ -78,30 +78,22 @@ navItemDropdown.addEventListener("click", (e) => {
 // Validation Email
 const submitForm = document.querySelector(".subscrip-form");
 const subscripInput = document.querySelector(".subscrip-input");
-const successAlert = document.querySelector(".alert.success");
-const dangerAlert = document.querySelector(".alert.danger");
-const warningAlert = document.querySelector(".alert.warning")
+
 let EmailIsExist = false
 submitForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let mail_format = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   if (subscripInput.value.match(mail_format)) {
-    successAlert.style.display = "flex";
-    setTimeout(() => {successAlert.style.display = "none"}, 3000);
+    alert("تم التسجيل بنجاح شكرا لك");
+    
     return true;
   } else if(EmailIsExist == true) {
-    warningAlert.style.display="flex";
-     subscripInput.focus();
-     setTimeout(() => {
-       warningAlert.style.display = "none";
-     }, 3000);
+   alert("البريد الذي ادخلتة مسجل بالفعل")
+
+   return false
   } else {
-    dangerAlert.style.display = "flex";
-    subscripInput.focus();
-    setTimeout(() => {
-      dangerAlert.style.display = "none";
-    }, 3000);
+   alert("البريد الالكترةني الذي ادخلته غير صحيح")
     return false;
   }
 });
