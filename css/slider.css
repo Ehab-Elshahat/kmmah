@@ -6,10 +6,14 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-
+.slider-box .box-item svg {
+  width: 40px;
+  height: 30px;
+  margin-bottom: 10px;
+}
 .slider-box .box-item h5 {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 14px;
   color: #2e2e2e;
 
 }
@@ -127,7 +131,7 @@ input.bolits:nth-child(5) {
 }
 .cards label {
   position: absolute;
-
+width: max-content;
   left: 0;
   right: 0;
   margin: auto;
@@ -159,11 +163,11 @@ input.bolits:nth-child(5) {
 #s3:checked ~ .cards #slide1,
 #s4:checked ~ .cards #slide2,
 #s5:checked ~ .cards #slide3 {
-  transform: translate3d(-220%, 0, -400px);
-  -webkit-transform: translate3d(-220%, 0, -400px);
-  -moz-transform: translate3d(-220%, 0, -400px);
-  -ms-transform: translate3d(-220%, 0, -400px);
-  -o-transform: translate3d(-220%, 0, -400px);
+  transform: translate3d(-280%, 0, -400px);
+  -webkit-transform: translate3d(-280%, 0, -400px);
+  -moz-transform: translate3d(-280%, 0, -400px);
+  -ms-transform: translate3d(-280%, 0, -400px);
+  -o-transform: translate3d(-280%, 0, -400px);
 }
 
 #s1:checked ~ .cards #slide5,
@@ -171,11 +175,11 @@ input.bolits:nth-child(5) {
 #s3:checked ~ .cards #slide2,
 #s4:checked ~ .cards #slide3,
 #s5:checked ~ .cards #slide4 {
-  transform: translate3d(-107%, 0, -200px);
-  -webkit-transform: translate3d(-107%, 0, -200px);
-  -moz-transform: translate3d(-107%, 0, -200px);
-  -ms-transform: translate3d(-107%, 0, -200px);
-  -o-transform: translate3d(-107%, 0, -200px);
+  transform: translate3d(-135%, 0, -200px);
+  -webkit-transform: translate3d(-135%, 0, -200px);
+  -moz-transform: translate3d(-135%, 0, -200px);
+  -ms-transform: translate3d(-135%, 0, -200px);
+  -o-transform: translate3d(-135%, 0, -200px);
 }
 
 #s1:checked ~ .cards #slide1,
@@ -183,22 +187,22 @@ input.bolits:nth-child(5) {
 #s3:checked ~ .cards #slide3,
 #s4:checked ~ .cards #slide4,
 #s5:checked ~ .cards #slide5 {
-  transform: translate3d(-11%, 0, 0);
-  -webkit-transform: translate3d(-11%, 0, 0);
-  -moz-transform: translate3d(-11%, 0, 0);
-  -ms-transform: translate3d(-11%, 0, 0);
-  -o-transform: translate3d(-11%, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
 }
 #s1:checked ~ .cards #slide2,
 #s2:checked ~ .cards #slide3,
 #s3:checked ~ .cards #slide4,
 #s4:checked ~ .cards #slide5,
 #s5:checked ~ .cards #slide1 {
-  transform: translate3d(87%, 0, -220px);
-  -webkit-transform: translate3d(87%, 0, -220px);
-  -moz-transform: translate3d(87%, 0, -220px);
-  -ms-transform: translate3d(87%, 0, -220px);
-  -o-transform: translate3d(87%, 0, -220px);
+  transform: translate3d(135%, 0, -220px);
+  -webkit-transform: translate3d(135%, 0, -220px);
+  -moz-transform: translate3d(135%, 0, -220px);
+  -ms-transform: translate3d(135%, 0, -220px);
+  -o-transform: translate3d(135%, 0, -220px);
 }
 
 #s1:checked ~ .cards #slide3,
@@ -206,11 +210,11 @@ input.bolits:nth-child(5) {
 #s3:checked ~ .cards #slide5,
 #s4:checked ~ .cards #slide1,
 #s5:checked ~ .cards #slide2 {
-  transform: translate3d(198%, 0, -400px);
-  -webkit-transform: translate3d(198%, 0, -400px);
-  -moz-transform: translate3d(198%, 0, -400px);
-  -ms-transform: translate3d(198%, 0, -400px);
-  -o-transform: translate3d(198%, 0, -400px);
+  transform: translate3d(280%, 0, -400px);
+  -webkit-transform: translate3d(280%, 0, -400px);
+  -moz-transform: translate3d(280%, 0, -400px);
+  -ms-transform: translate3d(280%, 0, -400px);
+  -o-transform: translate3d(280%, 0, -400px);
 }
 
 #s1:checked ~ .cards #slide1 .card,
