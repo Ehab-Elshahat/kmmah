@@ -67,6 +67,8 @@ function handelPosition() {
   }
 }
 
+handelPosition();
+
 // Stop Click Event On DropDown
 let navItemDropdown = document.querySelector(".nav-item.dropdown ");
 let dropDownMenu = document.querySelector(".dropdown-menu");
@@ -94,6 +96,7 @@ submitForm.addEventListener("submit", (e) => {
    return false
   } else {
    alert("البريد الالكترةني الذي ادخلته غير صحيح")
+ 
     return false;
   }
 });

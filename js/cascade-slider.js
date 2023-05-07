@@ -30,7 +30,7 @@
       }
 
       $('.cascade-slider_dot').removeClass('cur');
-      //$('.cascade-slider_dot').next().addClass('cur');
+      $('.cascade-slider_dot').next().addClass('cur');
     });
     
     // add data attributes

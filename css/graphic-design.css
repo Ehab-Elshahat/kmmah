@@ -7,6 +7,15 @@
 .main-graphic-design {
   margin-top: 200px;
 }
+.main-graphic-design .box-imag {
+  height: 480px;
+  overflow: hidden;
+}
+.main-graphic-design .box-imag img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 @media(max-width:991px) {
  .main-graphic-design {
   margin-top: 180px;

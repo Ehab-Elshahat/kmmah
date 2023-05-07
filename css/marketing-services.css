@@ -5,14 +5,15 @@
  */
 
 .marketing-header {
-  height: 55vh;
-  margin-top: 195px;
+  height: 90vh;
+  padding-top: 195px;
   background-image: url(../assets/SVG/Header\ BG.svg);
   background-size: cover;
-  background-position: center;
+    background-position: center 130px;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+ 
 }
 @media (max-width: 991px) {
   .marketing-header {
@@ -51,9 +52,9 @@
   }
 }
 .marketing-header .header-l {
-  position: relative;
-  left: 50px;
-  bottom: 0;
+      width: 300px;
+    margin: auto;
+    margin-top: -100px;
 }
 @media (max-width: 991px) {
   .marketing-header .header-l {
@@ -65,9 +66,9 @@
 
 /* Start From Our Work */
 .our-work {
-  height: 800px;
+  height: 480px;
   background-image: url("../assets/SVG/marketing-page/الهوية\ البصرية.svg");
-  background-size: 40vh;
+  background-size: 20%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -173,16 +174,26 @@
 
 /* Start Services  */
 .the-services .row {
-  align-items: center;
-  height: 550px;
+  
+height: 380px;
+
+}
+.the-services .col-lg-7 {
+  height: 410px;
 }
 @media (max-width: 991px) {
-  .the-services .row {
+  .the-services .row,
+  .the-services .col-lg-7 {
     height: auto;
   }
+
 }
 .ser-r {
-  padding-top: 60px;
+
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 @media (max-width: 991px) {
   .ser-r {
@@ -190,7 +201,7 @@
   }
 }
 .ser-r .ser-r-titles {
-  height: 60px;
+  height: 40px;
   font-weight: bold;
 
   font-size: 2vh;
@@ -204,7 +215,7 @@
 .ser-r .ser-r-titles.active,
 .ser-r .ser-r-titles:hover {
   color: var(--headingSectionsColor);
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 .ser-l {
   display: none;
@@ -213,14 +224,16 @@
   display: block;
 }
 .ser-l .box-logo {
-  width: 100px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 25px;
 }
 .ser-l .box-logo img {
   width: 100%;
+  height: 100%;
 }
 .ser-l .box-desc p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--unnamed-color-273587);
   line-height: 1.7;
@@ -251,7 +264,7 @@
 }
 .ser-l .box-list ul li {
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 10px;
   margin-right: 20px;
 }
