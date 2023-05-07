@@ -6,11 +6,12 @@
 let loaderContainer = document.querySelector(".loader-container");
 let page = document.documentElement;
 window.addEventListener("load", ()=> {
+ 
   setTimeout(() => {
     
     loaderContainer.style.display = "none"
     page.style.overflowY="auto"
-  }, 700);
+  }, 1000);
 
 })
 
@@ -59,10 +60,21 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+
+
 // Go To Page On Click a Link
+
+
 function goToLink(e) {
+
+//  event.stopPropagation();
+
+  
+  
   window.open(e, "_self");
 }
+
+
 
 
 // Close Navbar in Small Screen
