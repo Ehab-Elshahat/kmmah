@@ -1,5 +1,19 @@
 /** @format */
 
+
+
+// Before Content Lode
+let loaderContainer = document.querySelector(".loader-container");
+let page = document.documentElement;
+window.addEventListener("load", ()=> {
+  setTimeout(() => {
+    
+    loaderContainer.style.display = "none"
+    page.style.overflowY="auto"
+  }, 700);
+
+})
+
 // Scroll Top Btn
 let scrollTopBtn = document.querySelector(".scrollTotop");
 
@@ -80,6 +94,9 @@ navItemDropdown.addEventListener("click", (e) => {
 // Validation Email
 const submitForm = document.querySelector(".subscrip-form");
 const subscripInput = document.querySelector(".subscrip-input");
+const succAlert = document.querySelector(".alert.succ-alert");
+const waringAlert = document.querySelector(".alert.waring-alert");
+const dangerAlert = document.querySelector(".alert.danger-alert");
 
 let EmailIsExist = false
 submitForm.addEventListener("submit", (e) => {
@@ -87,16 +104,25 @@ submitForm.addEventListener("submit", (e) => {
 
   let mail_format = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   if (subscripInput.value.match(mail_format)) {
-    alert("تم التسجيل بنجاح شكرا لك");
-    
+    succAlert.style.display = "flex"
+    setTimeout(() => {
+      succAlert.style.display = "none"
+      
+    }, 2000);
     return true;
   } else if(EmailIsExist == true) {
-   alert("البريد الذي ادخلتة مسجل بالفعل")
-
+    waringAlert.style.display = "flex";
+    setTimeout(() => {
+      waringAlert.style.display = "none";
+    }, 2000);
+    subscripInput.focus()
    return false
   } else {
-   alert("البريد الالكترةني الذي ادخلته غير صحيح")
- 
+      dangerAlert.style.display = "flex";
+      setTimeout(() => {
+        dangerAlert.style.display = "none";
+      }, 2000);
+      subscripInput.focus();
     return false;
   }
 });
@@ -108,16 +134,16 @@ let titles = document.querySelectorAll(
   ".overlay .container .overlay-l ul li h2"
 );
 let bgImages = [
-  "../assets/SVG/marketing-page/vesuvio.png",
+  "../assets/SVG/marketing-page/Manazel.png",
+  "../assets/SVG/marketing-page/Vesuvio.png",
   "../assets/SVG/marketing-page/Trackmat.png",
   "../assets/SVG/marketing-page/Ta3lam.png",
   "../assets/SVG/marketing-page/Urmoney.png",
-  "../assets/SVG/marketing-page/Homey.png",
 ];
 titles.forEach((title, index)=> {
   title.addEventListener("click",() => {
     ourWorkSection.style.backgroundImage = "url("+bgImages[index]+")";
-    ourWorkSection.style.backgroundSize = "cover";
+  
   })
 })
 

@@ -7,7 +7,7 @@
 .marketing-header {
   height: 90vh;
   padding-top: 195px;
-  background-image: url(../assets/SVG/Header\ BG.svg);
+  background-image: url("../assets/SVG/Home-Page/Header\ BG.svg");
   background-size: cover;
     background-position: center 130px;
   background-repeat: no-repeat;
@@ -66,9 +66,9 @@
 
 /* Start From Our Work */
 .our-work {
-  height: 480px;
-  background-image: url("../assets/SVG/marketing-page/الهوية\ البصرية.svg");
-  background-size: 20%;
+  height: 680px;
+  background-image: url("../assets/SVG/marketing-page/Logo-Icon.png");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
