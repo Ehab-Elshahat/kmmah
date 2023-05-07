@@ -11,7 +11,7 @@ window.addEventListener("load", ()=> {
     
     loaderContainer.style.display = "none"
     page.style.overflowY="auto"
-  }, 1000);
+  }, 700);
 
 })
 
