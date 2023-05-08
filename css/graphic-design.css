@@ -1,18 +1,45 @@
 /**
- * Start Main Section
- *
- * @format
- */
+*
+* @format
+*/
+/* Start Main Section */
 
 .main-graphic-design {
   margin-top: 200px;
 }
 .main-graphic-design .box-imag {
+  cursor: pointer;
   height: 500px;
   overflow: hidden;
+  position: relative;
 }
 .main-graphic-design .box-imag img {
+
   object-fit: cover;
+  height: 100%;
+}
+.main-graphic-design .box-imag .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+.main-graphic-design .box-imag:hover .overlay{
   height: 100%;
 }
 @media(max-width:991px) {

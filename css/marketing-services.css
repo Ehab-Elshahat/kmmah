@@ -51,13 +51,16 @@
     font-size: 16px;
   }
 }
+.marketing-header .container .col-lg-4 {
+  margin-top: -100px;
+}
 .marketing-header .header-l {
       width: 300px;
     margin: auto;
-    margin-top: -100px;
+    
 }
 @media (max-width: 991px) {
-  .marketing-header .header-l {
+  .marketing-header .container .col-lg-4 {
     
     margin-top: 0;
   }
