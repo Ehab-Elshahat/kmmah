@@ -46,21 +46,134 @@
     font-size: 16px;
   }
 }
-.mobile-app-header .header-l {
-  position: relative;
-  left: 50px;
-  bottom: 0;
+.mobile-app-header .container .col-lg-4 {
+  margin-top: -100px;
 }
 .mobile-app-header .header-l {
   width: 300px;
     margin: auto;
-    margin-top: -100px;
+ 
 }
 @media (max-width: 991px) {
-  .mobile-app-header .header-l {
-    left: 0;
-    bottom: 0;
-    margin: auto;
+  .mobile-app-header .container .col-lg-4 {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 }
 /* End Header */
+
+/* Start large box */
+.large-box {
+  background-color: #fcfcfc;
+}
+@media(max-width: 991px) {
+ .large-box{
+  margin-top: 60px !important;
+ } 
+}
+.large-box .large-box-text {
+  position: relative;
+  min-height: 200px;
+  padding: 25px;
+  background: transparent radial-gradient(#3756e8 0%, #4dc7ed 100%);
+  box-shadow: 0px 1px 1px #47474729;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.large-box .large-box-text .section-title {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .large-box .large-box-text {
+    padding: 40px;
+  }
+}
+.large-box .large-box-text p {
+  font-size: 16px;
+  color: #dfffff;
+  line-height:2;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+@media(max-width: 991px) {
+  .large-box .large-box-text p {
+     width: 90%;
+  }
+}
+.large-box .bg-img {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  z-index: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+@media (max-width: 991px) {
+  .large-box .bg-img {
+    top: -60px;
+    right: 50%;
+    transform: translate(50%, 0) rotate(90deg);
+    -webkit-transform: translate(50%, 0) rotate(90deg);
+    -moz-transform: translate(50%, 0) rotate(90deg);
+    -ms-transform: translate(50%, 0) rotate(90deg);
+    -o-transform: translate(50%, 0) rotate(90deg);
+  }
+}
+.large-box .bg-img img {
+  width: 100px;
+}
+/* End large box */
+
+/* Start integrated solutions */
+
+.custom-create {
+  background-color: #fff;
+  box-shadow: 0px 3px 5px #d0e0e6;
+}
+.custom-box {
+  height: 280px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(242 245 249/ 30%);
+
+  box-shadow: 0px 1px 1px rgb(71 71 71 / 10%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.custom-box .row > div {
+  flex: 1;
+}
+.custom-box .custom-box-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--headingSectionsColor);
+  text-align: center;
+}
+.custom-box .custom-icon {
+  width: 60px;
+  margin: auto;
+}
+.custom-box .custom-icon img {
+  width: 100%;
+}
+.custom-box .custom-p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* End integrated solutions */
