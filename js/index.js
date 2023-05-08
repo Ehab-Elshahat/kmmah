@@ -1,19 +1,14 @@
 /** @format */
 
-
-
 // Before Content Lode
 let loaderContainer = document.querySelector(".loader-container");
 let page = document.documentElement;
-window.addEventListener("load", ()=> {
- 
+window.addEventListener("load", () => {
   setTimeout(() => {
-    
-    loaderContainer.style.display = "none"
-    page.style.overflowY="auto"
+    loaderContainer.style.display = "none";
+    page.style.overflowY = "auto";
   }, 700);
-
-})
+});
 
 // Scroll Top Btn
 let scrollTopBtn = document.querySelector(".scrollTotop");
@@ -60,22 +55,15 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-
-
 // Go To Page On Click a Link
 
-
-function goToLink(e) {
-
-//  event.stopPropagation();
-
-  
-  
-  window.open(e, "_self");
-}
-
-
-
+let dropLinks = document.querySelectorAll(".go-to-page");
+dropLinks.forEach(link => {
+  link.addEventListener("click", (e)=> {
+    e.preventDefault()
+    window.location.href = link.getAttribute("href")
+  })
+})
 
 // Close Navbar in Small Screen
 let closeNav = document.querySelector(".close-nav");
@@ -110,31 +98,30 @@ const succAlert = document.querySelector(".alert.succ-alert");
 const waringAlert = document.querySelector(".alert.waring-alert");
 const dangerAlert = document.querySelector(".alert.danger-alert");
 
-let EmailIsExist = false
+let EmailIsExist = false;
 submitForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let mail_format = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   if (subscripInput.value.match(mail_format)) {
-    succAlert.style.display = "flex"
+    succAlert.style.display = "flex";
     setTimeout(() => {
-      succAlert.style.display = "none"
-      
+      succAlert.style.display = "none";
     }, 2000);
     return true;
-  } else if(EmailIsExist == true) {
+  } else if (EmailIsExist == true) {
     waringAlert.style.display = "flex";
     setTimeout(() => {
       waringAlert.style.display = "none";
     }, 2000);
-    subscripInput.focus()
-   return false
+    subscripInput.focus();
+    return false;
   } else {
-      dangerAlert.style.display = "flex";
-      setTimeout(() => {
-        dangerAlert.style.display = "none";
-      }, 2000);
-      subscripInput.focus();
+    dangerAlert.style.display = "flex";
+    setTimeout(() => {
+      dangerAlert.style.display = "none";
+    }, 2000);
+    subscripInput.focus();
     return false;
   }
 });
@@ -152,26 +139,23 @@ let bgImages = [
   "../assets/SVG/marketing-page/Ta3lam.png",
   "../assets/SVG/marketing-page/Urmoney.png",
 ];
-titles.forEach((title, index)=> {
-  title.addEventListener("click",() => {
-    ourWorkSection.style.backgroundImage = "url("+bgImages[index]+")";
-  
-  })
-})
+titles.forEach((title, index) => {
+  title.addEventListener("click", () => {
+    ourWorkSection.style.backgroundImage = "url(" + bgImages[index] + ")";
+  });
+});
 
 // Marketing page
 // The Services
 let serTitles = document.querySelectorAll(".ser-r-titles");
-let serBoxes = document.querySelectorAll(".ser-l")
+let serBoxes = document.querySelectorAll(".ser-l");
 serTitles.forEach((title, index) => {
-  title.addEventListener("click", ()=> {
-    serTitles.forEach(tit => tit.classList.remove("active"))
-    title.classList.add("active")
-    serBoxes.forEach(box => {
-      box.classList.remove("active")
-    })
-    serBoxes[index].classList.add("active")
-  })
-})
-
-
+  title.addEventListener("click", () => {
+    serTitles.forEach((tit) => tit.classList.remove("active"));
+    title.classList.add("active");
+    serBoxes.forEach((box) => {
+      box.classList.remove("active");
+    });
+    serBoxes[index].classList.add("active");
+  });
+});

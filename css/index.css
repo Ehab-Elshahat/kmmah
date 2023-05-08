@@ -230,8 +230,10 @@ body {
   -moz-transition: var(--mainTransitionTim);
   -ms-transition: var(--mainTransitionTim);
   -o-transition: var(--mainTransitionTim);
-  cursor: pointer;
+  position: relative;
+  z-index: 1000;
 }
+
 .navbar-expand-lg .navbar-nav .dropdown-menu ul li .go-to-page svg {
   margin-left: 12px;
 }
@@ -782,6 +784,7 @@ footer .social ul li {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+
 }
 
 /* Handle on hover */
@@ -797,7 +800,7 @@ footer .social ul li {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #E9F5F7;
+  background-color: #FFF;
   z-index: 10000;
   display: flex;
   align-items: center;
