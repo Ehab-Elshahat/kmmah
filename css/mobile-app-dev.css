@@ -1,0 +1,66 @@
+
+/* Start Header */
+.mobile-app-header{
+  height: 90vh;
+  padding-top: 195px;
+  background-image: url("../assets/SVG/Home-Page/Header\ BG.svg");
+  background-size: cover;
+  background-position: center 130px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .mobile-app-header {
+    height: auto;
+  }
+}
+.mobile-app-header .row {
+  align-items: center;
+}
+.mobile-app-header .header-r h1 {
+  margin: auto;
+  width: max-content;
+  padding: 15px 100px;
+}
+
+@media (max-width: 991px) {
+  .mobile-app-header .header-r {
+    margin-bottom: 30px;
+  }
+  .mobile-app-header .header-r h1 {
+    padding: 15px 30px;
+  }
+}
+.mobile-app-header .header-r p {
+  max-width: 480px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px auto;
+  line-height: 2;
+  color: #3c414b;
+}
+@media(max-width: 500px) {
+  .mobile-app-header .header-r p {
+    font-size: 16px;
+  }
+}
+.mobile-app-header .header-l {
+  position: relative;
+  left: 50px;
+  bottom: 0;
+}
+.mobile-app-header .header-l {
+  width: 300px;
+    margin: auto;
+    margin-top: -100px;
+}
+@media (max-width: 991px) {
+  .mobile-app-header .header-l {
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+/* End Header */
