@@ -618,34 +618,34 @@ footer .social-box ul li a {
   -o-transition: all 0.5s ease-in-out;
 }
 footer ul li a.snap {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/icon\ _snapchat.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/icon\ _snapchat.svg");
 }
 footer ul li a.snap:hover {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/snapchat.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/snapchat.svg");
 }
 footer ul li a.twitter {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/icon\ _twitter.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/icon\ _twitter.svg");
 }
 footer ul li a.twitter:hover {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/twitter.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/twitter.svg");
 }
 footer ul li a.instagram {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/icon\ _instagram.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/icon\ _instagram.svg");
 }
 footer ul li a.instagram:hover {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/instagram.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/instagram.svg");
 }
 footer ul li a.linked {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/icon\ _linkedin.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/icon\ _linkedin.svg");
 }
 footer ul li a.linked:hover {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/linkedin.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/linkedin.svg");
 }
 footer ul li a.facebook {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/icon\ _facebook.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/icon\ _facebook.svg");
 }
 footer ul li a.facebook:hover {
-  background-image: url("../assets/General/Nav-Footer/Social-Icons/facebook.svg");
+  background-image: url("../assets/General/Nav-Footer/social-icons/facebook.svg");
 }
 
 footer ul li a:hover {

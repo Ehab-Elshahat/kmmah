@@ -79,11 +79,11 @@
    height: 500px;
    overflow: hidden;
    position: relative;
-   transition: all .7s ease-in-out;
-   -webkit-transition: all .7s ease-in-out;
-   -moz-transition: all .7s ease-in-out;
-   -ms-transition: all .7s ease-in-out;
-   -o-transition: all .7s ease-in-out;
+   transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -ms-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
    transform: scale(.9);
    -webkit-transform: scale(.9);
    -moz-transform: scale(.9);
@@ -110,11 +110,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: all .7s ease-in-out;
-  -webkit-transition: all .7s ease-in-out;
-  -moz-transition: all .7s ease-in-out;
-  -ms-transition: all .7s ease-in-out;
-  -o-transition: all .7s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
 }
 .main-graphic-design .box-imag .overlay h3 {
   font-size: 30px;
