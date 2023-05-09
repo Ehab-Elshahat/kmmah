@@ -83,6 +83,52 @@ function handelPosition() {
 
 handelPosition();
 
+// Active box image Home Slider our services
+let inputRadio = document.querySelectorAll(".bolits");
+let cards = document.querySelectorAll("label")
+
+cards.forEach(card => {
+  card.addEventListener("click", ()=> {
+   card.click()
+    displayActive();
+  })
+});
+
+inputRadio.forEach(input => {
+  input.addEventListener("click", ()=> {
+    displayActive();
+  })
+})
+
+function displayActive(){
+  inputRadio.forEach((input) => {
+      if (input.checked) {
+        let inputId = input.getAttribute("id");
+        
+        let activeCardBoxItem = document.querySelectorAll(`label[for='${inputId}'] .card .box-item`);
+        activeCardBoxItem.forEach((box) => {
+        
+          box.children[0].style.display = "none"
+      box.children[1].style.display = "block"
+
+        });
+      } else {
+        let inputId = input.getAttribute("id");
+
+        let activeCardBoxItem = document.querySelectorAll(
+          `label[for='${inputId}'] .card .box-item`
+        );
+        activeCardBoxItem.forEach((box) => {
+          box.children[0].style.display = "block"
+          box.children[1].style.display = "none"
+        });
+      }
+    });
+}
+displayActive()
+
+
+
 // Stop Click Event On DropDown
 let navItemDropdown = document.querySelector(".nav-item.dropdown ");
 let dropDownMenu = document.querySelector(".dropdown-menu");
@@ -133,11 +179,11 @@ let titles = document.querySelectorAll(
   ".overlay .container .overlay-l ul li h2"
 );
 let bgImages = [
-  "../assets/marketing-page/Manazel.png",
-  "../assets/marketing-page/Vesuvio.png",
-  "../assets/marketing-page/Trackmat.png",
-  "../assets/marketing-page/Ta3lam.png",
-  "../assets/marketing-page/Urmoney.png",
+  "../assets/marketing-page/manazel.png",
+  "../assets/marketing-page/vesuvio.png",
+  "../assets/marketing-page/trackmat.png",
+  "../assets/marketing-page/ta3lam.png",
+  "../assets/marketing-page/urmoney.png",
 ];
 titles.forEach((title, index) => {
   title.addEventListener("mouseover", () => {
