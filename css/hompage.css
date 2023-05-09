@@ -6,7 +6,7 @@
 /* Start Header */
 .home-page-header {
   padding-top: 170px;
-  background-image: url("../assets/SVG/Home-Page/Header\ BG.svg");
+  background-image: url("../assets/home-page/header-bg.svg");
 background-size: cover;
     background-position: center 130px;
   background-repeat: no-repeat;
@@ -122,7 +122,7 @@ width: auto;
 
 /* Start Software Development */
 .software-development {
-  background-image: url("../assets/SVG/Home-Page/software-development-section/software-development.svg");
+  background-image: url("../assets/home-page/software-development-section/software-development.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top left;
@@ -411,15 +411,15 @@ border-right: 5px solid rgb(255, 255, 255, .5);
  
 }
 .our-work-img.one {
-  background-image: url("../assets/SVG/Home-Page//Our-Work-section/vesuvio.png");
+  background-image: url("../assets/home-page/our-work-section/vesuvio.png");
   
 }
 .our-work-img.tow {
-  background-image: url("../assets/SVG/Home-Page//Our-Work-section/trackmate.png");
+  background-image: url("../assets/home-page/our-work-section/trackmate.png");
   
 }
 .our-work-img.three {
-  background-image: url("../assets/SVG/Home-Page//Our-Work-section/ta3alam.png");
+  background-image: url("../assets/home-page/our-work-section/ta3alam.png");
   
 }
 

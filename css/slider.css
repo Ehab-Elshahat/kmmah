@@ -18,6 +18,20 @@
 
 }
 
+.slider-box .box-item .img {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider-box .box-item .img img {
+  width: 100%;
+  height: 100%;
+}
+
 input.bolits {
   position: absolute;
   bottom: 0;

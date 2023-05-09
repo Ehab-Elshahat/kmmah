@@ -133,14 +133,14 @@ let titles = document.querySelectorAll(
   ".overlay .container .overlay-l ul li h2"
 );
 let bgImages = [
-  "../assets/SVG/marketing-page/Manazel.png",
-  "../assets/SVG/marketing-page/Vesuvio.png",
-  "../assets/SVG/marketing-page/Trackmat.png",
-  "../assets/SVG/marketing-page/Ta3lam.png",
-  "../assets/SVG/marketing-page/Urmoney.png",
+  "../assets/marketing-page/Manazel.png",
+  "../assets/marketing-page/Vesuvio.png",
+  "../assets/marketing-page/Trackmat.png",
+  "../assets/marketing-page/Ta3lam.png",
+  "../assets/marketing-page/Urmoney.png",
 ];
 titles.forEach((title, index) => {
-  title.addEventListener("click", () => {
+  title.addEventListener("mouseover", () => {
     ourWorkSection.style.backgroundImage = "url(" + bgImages[index] + ")";
   });
 });
@@ -150,7 +150,7 @@ titles.forEach((title, index) => {
 let serTitles = document.querySelectorAll(".ser-r-titles");
 let serBoxes = document.querySelectorAll(".ser-l");
 serTitles.forEach((title, index) => {
-  title.addEventListener("click", () => {
+  title.addEventListener("mouseover", () => {
     serTitles.forEach((tit) => tit.classList.remove("active"));
     title.classList.add("active");
     serBoxes.forEach((box) => {
